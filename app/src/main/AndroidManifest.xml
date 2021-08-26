@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pibicproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pibicproject">
+        <activity
+            android:name=".activity.MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/Theme.Pibicproject.NoActionBar">
+
+
+
+        </activity>
+
+        <activity android:name=".activity.CadastroActivity" />
+
+        <activity android:name=".activity.LoginActivity" />
+
+        <activity
+            android:name=".activity.MainActivity2Intro"
+            android:theme="@style/Theme.Intro">
+            <!-- Colocar esse para ser o principal de todos com o intent-filter-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".activity.FormularioProblemas"
+            android:theme="@style/Theme.Pibicproject"/>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IndiceAguaTheme"/>
+
+        <activity android:name=".activity.Tela02"
+            android:theme="@style/Theme.Pibicproject"/>
+
+        <activity
+            android:name=".activity.TeladeOpcoes"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "235987680286",
+    "project_id": "pibic2021-projeto",
+    "storage_bucket": "pibic2021-projeto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235987680286:android:14c7ff9c03bd257b1b420f",
+        "android_client_info": {
+          "package_name": "com.example.pibicproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235987680286-709sssqkfnt861dmf329s78u9p5a057s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pibicproject",
+            "certificate_hash": "9acd5ffd5971dcb069adcfb04222d87558f4321f"
+          }
+        },
+        {
+          "client_id": "235987680286-fs4ieuabocoi7s58ftva73moi307aqac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9eGGNVynnFvZCRfyAiHYfxMoV8NdjOS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235987680286-fs4ieuabocoi7s58ftva73moi307aqac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

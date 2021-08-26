@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/produto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FormularioProblemas">
+
+
+    <SeekBar
+        android:id="@+id/seekBarUrgencia"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:min="1"
+        android:progress="4"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintBottom_toTopOf="@+id/textTendencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUrgencia" />
+
+    <TextView
+        android:id="@+id/textUrgencia"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="URGÊNCIA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarUrgencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarGravidade" />
+
+    <SeekBar
+        android:id="@+id/seekBarGravidade"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:min="1"
+        android:progress="3"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintBottom_toTopOf="@+id/textUrgencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGravidade" />
+
+    <TextView
+        android:id="@+id/textGravidade"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="GRAVIDADE"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarGravidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tv_prioridade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIORIDADE:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/textTendencia"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:text="TENDÊNCIA"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarTendencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarUrgencia" />
+
+    <SeekBar
+        android:id="@+id/seekBarTendencia"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:min="1"
+        android:progress="4"
+        android:progressDrawable="@drawable/custom_seekbar"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTendencia" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="STATUS"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/fabSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_prioridade" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/ForestGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_checado_branco_24dp"
+        android:onClick="salvarProblema"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textGravidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_prioridade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarTendencia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

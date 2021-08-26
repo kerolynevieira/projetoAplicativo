@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Pibicproject</string>
+    <string name="ETE">ETE</string>
+
+    <string-array name="Gravidade">
+        <item>Sem Gravidade</item>
+        <item>Pouco Grave</item>
+        <item>Grave</item>
+        <item>Muito Grave</item>
+        <item>Extremamente Grave</item>
+    </string-array>
+
+    <string-array name="Urgencia">
+        <item>Pode Esperar</item>
+        <item>Pouco Urgente</item>
+        <item>O mais Rápido Possível</item>
+        <item>Urgente</item>
+        <item>Precisa ser Resolvido já</item>
+    </string-array>
+
+    <string-array name="Tendencia">
+        <item>Não Mudar</item>
+        <item>Piora em Longo Prazo</item>
+        <item>Piora em Médio Prazo</item>
+        <item>Piora em Curto Prazo</item>
+        <item>Piora Rapidamente</item>
+    </string-array>
+    <string name="title_activity_menu2">MenuActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+
+
+</resources>
