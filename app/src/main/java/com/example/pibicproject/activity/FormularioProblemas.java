@@ -38,7 +38,7 @@ public class FormularioProblemas extends AppCompatActivity {
     private Movimentacao movimentacao;
     private DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
     private FirebaseAuth autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
-    /*private Double ACAefluentett;
+    private Double ACAefluentett;
     private Double ACAmetaistt;
     private Double ACAquimicott;
     private Double ETEaguatt;
@@ -57,7 +57,7 @@ public class FormularioProblemas extends AppCompatActivity {
     private Double GERdocumentoGerado;
     private Double GERgasesGerado;
     private Double LAVaguaGerado;
-    private Double LAVquimicoGerado; */
+    private Double LAVquimicoGerado;
     private String problemasTotal;
     private TipoProblemaEnum tipoProblemaEnum;
 
@@ -410,6 +410,16 @@ public class FormularioProblemas extends AppCompatActivity {
             @Override
             public void onDataChange( DataSnapshot dataSnapshot) {
                 Usuario usuario = dataSnapshot.getValue(Usuario.class);
+                /*ACAmetaistt = usuario.getTtACAmetais();
+                ACAquimicott = usuario.getTtACAquimico();
+                ACAefluentett = usuario.getTtACAefluente();
+                GERgasestt = usuario.getTtGERgases();
+                GERdocumentott = usuario.getTtGERdocumento();
+                GERaguatt = usuario.getTtGERagua();
+                ETEaguatt = usuario.getTtEETEagua();
+                ETEprodutostt = usuario.getTtETEprodutos();
+                LAVquimicott = usuario.getTtLAVquimico();
+                LAVaguatt = usuario.getTtLAVagua();*/
 
             }
 

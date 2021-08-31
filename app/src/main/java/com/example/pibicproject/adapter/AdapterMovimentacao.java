@@ -40,18 +40,9 @@ public class AdapterMovimentacao extends RecyclerView.Adapter<AdapterMovimentaca
     public void onBindViewHolder(MyViewHolder holder, int position)
     {
         Movimentacao movimentacao = movimentacoes.get(position);
- //       holder.problema.setText(movimentacao.getTipoProblemaEnum());
-
-
-
-
-
-
-
-
-
-
-
+      //  holder.problema.setText(movimentacao.getTipoProblemaEnum());
+     //   holder.prioridade.setText(movimentacao.getValor());
+        holder.prioridade.setText("alguma coisa");
 
 
     }

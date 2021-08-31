@@ -9,6 +9,7 @@ import com.google.firebase.database.DatabaseReference;
 
 public class Movimentacao {
     private String data;
+    private  String valor;
     /*private String ACAefluente;
     private String ACAmetais;
     private String ACAquimico;
@@ -51,6 +52,13 @@ public class Movimentacao {
     public void setData(String data) {
         this.data = data;
     }
+
+    public String getValor() { return valor; }
+
+    public void setValor(String valor) { this.valor = valor; }
+
+
+
     public TipoProblemaEnum getTipoProblemaEnum() {
         return tipoProblemaEnum;
     }

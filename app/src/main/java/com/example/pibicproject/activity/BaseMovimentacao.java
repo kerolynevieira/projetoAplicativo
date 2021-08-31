@@ -9,12 +9,15 @@ import com.google.firebase.database.DatabaseReference;
 public class BaseMovimentacao {
     private String data;
     private String tipo;
+    //private String valor;
 
     public String getData() {
         return data;
     }
 
-//    public String getTipo() {return tipo; }
+    public String getTipo() {return tipo; }
+
+    //public String getValor() {return  valor;}
 
     public void salvar(String dataEscolhida){
 
